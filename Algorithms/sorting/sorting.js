@@ -47,7 +47,6 @@ console.log(basket);
 //TODO: 3 -> Insertion Sort: small dataset or dataset which are nearly sorted
 const insertionSort = (array) => {
   const length = array.length;
-  const sortedArray = [];
   for (let i = 0; i < length; i++) {
     if (array[i] < array[0]) {
       //move number to the 1st position
@@ -63,5 +62,3 @@ const insertionSort = (array) => {
     }
   }
 };
-//TODO: 4 -> Merge Sort
-//TODO: 5 -> Quick Sort
