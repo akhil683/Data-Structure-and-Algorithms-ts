@@ -1,5 +1,5 @@
 //big O : 0(2^N)
-function factorial(number) {
+function factorial(number: number) {
   if (number === 2) {
     return 2;
   }
@@ -8,7 +8,7 @@ function factorial(number) {
 factorial(5);
 
 //Fibonacci sequence: 0,1, 1, 2, 3, 5, 8, 13, 21, 34....
-function fibonacci(n) {
+function fibonacci(n: number) {
   if (n < 2) return n;
   return fibonacci(n - 1) + fibonacci(n - 2);
 }

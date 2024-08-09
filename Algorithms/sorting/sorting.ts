@@ -6,7 +6,7 @@ basket.sort(function (a, b) {
 }); // 1, 2, 2, 7, 8, 34, 65
 
 //TODO: 1 -> Bubble Sort
-const bubbleSort = (array) => {
+const bubbleSort = (array: number[]) => {
   const length = array.length;
   for (let i = 0; i <= length; i++) {
     for (let j = 0; j < length; j++) {
@@ -23,11 +23,11 @@ bubbleSort(basket);
 console.log(basket);
 
 //TODO: 2 -> Selection Sort
-const selectionSort = (array) => {
+const selectionSort = (array: number[]) => {
   const length = array.length;
   for (let i = 0; i < length; i++) {
     //set current index as minimum
-    const min = i;
+    let min: number = i;
     let temp = array[i];
     for (let j = i + 1; j < length; j++) {
       if (array[j] < array[min]) {
@@ -45,7 +45,7 @@ selectionSort(basket);
 console.log(basket);
 
 //TODO: 3 -> Insertion Sort: small dataset or dataset which are nearly sorted
-const insertionSort = (array) => {
+const insertionSort = (array: number[]) => {
   const length = array.length;
   for (let i = 0; i < length; i++) {
     if (array[i] < array[0]) {
